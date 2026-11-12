@@ -2,7 +2,7 @@
 
 Demo de una migración completa: pasa los tickets de un proyecto de Jira a GitHub Issues, los ubica en un tablero de GitHub Projects y reemplaza las reglas automáticas de Jira con GitHub Actions.
 
-Los issues de este repositorio son el resultado: fueron creados por el script a partir de un proyecto de Jira de ejemplo con 20 tickets.
+Los issues de este repositorio son el resultado: fueron creados por el script a partir de un proyecto de Jira de ejemplo con 10 tickets.
 
 ## Qué resuelve
 
@@ -61,7 +61,7 @@ pip install -r requirements.txt
 cp .env.example .env        # y completar los datos de Jira y GitHub
 ```
 
-Si el proyecto de Jira está vacío, este comando carga los 20 tickets de ejemplo:
+Si el proyecto de Jira está vacío, este comando carga los 10 tickets de ejemplo:
 
 ```bash
 python seed_jira.py
@@ -79,8 +79,8 @@ Al terminar, el script compara los dos lados y termina con error si algo no coin
 
 ```
 Verificación
-  Tickets en Jira:              20
-  Issues migrados en GitHub:    20
+  Tickets en Jira:              10
+  Issues migrados en GitHub:    10
   Comentarios en Jira:          11
   Comentarios migrados:         11
   Terminados en Jira / GitHub:  6 / 6
